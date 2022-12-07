@@ -1,12 +1,15 @@
 package com.koc.tema_back.tema.entity;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
-@Builder
 @Getter
+@Setter
+@Builder
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class TemaDto {
     private long id;
-    private String TemaNm;
+    private String temaNm;
     private String iconUrl;
 }

@@ -10,6 +10,7 @@ public class TemaService {
     private final TemaMapper temaMapper;
 
     public void save(TemaDto temaDto) {
+        System.out.println(temaDto.toString());
         repository.save(temaMapper.dtoToEntity(temaDto));
     }
 

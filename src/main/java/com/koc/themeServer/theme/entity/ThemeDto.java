@@ -1,4 +1,4 @@
-package com.koc.tema_back.tema.entity;
+package com.koc.themeServer.theme.entity;
 
 import lombok.*;
 
@@ -8,7 +8,7 @@ import lombok.*;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class TemaDto {
+public class ThemeDto {
     private long id;
     private String temaNm;
     private String iconUrl;

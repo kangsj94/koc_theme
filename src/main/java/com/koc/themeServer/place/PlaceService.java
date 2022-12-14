@@ -1,4 +1,4 @@
-package com.koc.tema_back.place;
+package com.koc.themeServer.place;
 
 import org.springframework.stereotype.Service;
 

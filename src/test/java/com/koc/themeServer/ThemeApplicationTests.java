@@ -1,13 +1,13 @@
-package com.koc.tema_back;
+package com.koc.themeServer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TemaApplicationTests {
+class ThemeApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

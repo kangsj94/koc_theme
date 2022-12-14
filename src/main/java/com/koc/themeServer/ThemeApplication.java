@@ -1,4 +1,4 @@
-package com.koc.tema_back;
+package com.koc.themeServer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
@@ -9,9 +9,9 @@ import org.springframework.cloud.openfeign.FeignAutoConfiguration;
 @SpringBootApplication
 @EnableFeignClients
 @ImportAutoConfiguration({FeignAutoConfiguration.class})
-public class TemaApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(TemaApplication.class, args);
-	}
+public class ThemeApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ThemeApplication.class, args);
+    }
 
 }

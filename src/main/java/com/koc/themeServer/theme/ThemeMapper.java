@@ -1,5 +1,6 @@
-package com.koc.themeServer.theme.entity;
+package com.koc.themeServer.theme;
 
+import com.koc.themeServer.theme.entity.ThemeEntity;
 import org.springframework.stereotype.Component;
 
 @Component

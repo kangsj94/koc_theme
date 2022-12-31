@@ -1,10 +1,12 @@
 package com.koc.themeServer.theme.entity;
 
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 
 
 @Entity
@@ -12,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "tema")
+@Table(name = "theme")
 public class ThemeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

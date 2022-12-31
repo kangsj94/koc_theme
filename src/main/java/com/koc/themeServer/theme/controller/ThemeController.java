@@ -1,5 +1,7 @@
-package com.koc.themeServer.theme.entity;
+package com.koc.themeServer.theme.controller;
 
+import com.koc.themeServer.theme.ThemeDto;
+import com.koc.themeServer.theme.ThemeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

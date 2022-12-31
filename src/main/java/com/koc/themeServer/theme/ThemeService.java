@@ -1,4 +1,4 @@
-package com.koc.themeServer.theme.entity;
+package com.koc.themeServer.theme;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

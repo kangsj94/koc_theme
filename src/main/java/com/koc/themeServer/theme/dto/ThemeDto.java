@@ -1,4 +1,4 @@
-package com.koc.themeServer.theme;
+package com.koc.themeServer.theme.dto;
 
 import lombok.*;
 
@@ -10,6 +10,6 @@ import lombok.*;
 @AllArgsConstructor
 public class ThemeDto {
     private long id;
-    private String temaNm;
-    private String iconUrl;
+    private String themeName;
+    private String emoji;
 }

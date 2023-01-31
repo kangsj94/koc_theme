@@ -21,9 +21,9 @@ public class ThemeEntity {
     @Column(name = "id", nullable = false)
     private long id;
 
-    private String temaName;
+    private String themeName;
 
-    private String iconUrl;
+    private String emoji;
 
 
 }

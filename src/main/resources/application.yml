@@ -1,20 +1,22 @@
 server:
 
+app:
+  host: http://localhost:8080
+
 
 spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/THEME?serverTimezone=Asia/Seoul
+    username: root
+    password: root
   jpa:
-    generate-ddl: 'false'
+    hibernate:
+      ddl-auto: create
+    show-sql: true
     properties:
       hibernate:
-        enable_lazy_load_no_trans: 'true'
-        format_sql: 'true'
-    database: mysql
-    hibernate:
-      naming:
-        strategy: org.hibernate.cfg.ImprovedNamingStrategy
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: create
-
+        dialect: org.hibernate.dialect.MySQL5Dialect
 
 springdoc:
   version: '1.0.0'
@@ -25,9 +27,3 @@ springdoc:
   swagger-ui:
     operations-sorter: method
 
-app:
-  host: http://localhost:8082
-  title: Devellany's sample
-  version: ver.prototype
-  help-email: #MAIL_SENDER_ADDRESS
-  token-available-period: 60

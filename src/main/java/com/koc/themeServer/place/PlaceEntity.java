@@ -19,8 +19,10 @@ public class PlaceEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private long id;
+    
+    private String placeName;
 
     @ManyToOne
-    @JoinColumn(name = "tema_id")
-    private ThemeEntity tema;
+    @JoinColumn(name = "theme_id")
+    private ThemeEntity theme;
 }

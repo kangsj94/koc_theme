@@ -15,7 +15,6 @@ public class ThemeTest {
 
     @Test
     void 생성테스트() {
-
         ThemeDto themeDto = ThemeDto.builder().themeName("test").build();
         themeDomainService.save(themeDto);
     }

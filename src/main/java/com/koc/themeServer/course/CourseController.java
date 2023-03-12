@@ -12,7 +12,10 @@ public class CourseController {
     public void save(@RequestBody CourseSaveRequest courseSaveRequest) {
         courseService.save(courseSaveRequest.requestToDto());
     }
-
+    @GetMapping("/course/health-check")
+    public Long healthCheck() {
+        return System.currentTimeMillis();
+    }
     @GetMapping("/course/{id}")
     public CourseDto findById(@PathVariable long id) {
         return courseService.findById(id);

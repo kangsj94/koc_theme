@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter
@@ -22,4 +23,6 @@ public class CourseEntity {
     private String courseName;
 
     private String emoji;
+
+    private List<String> placeList;
 }

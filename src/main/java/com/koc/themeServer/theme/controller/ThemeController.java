@@ -17,6 +17,16 @@ public class ThemeController {
         themeDomainService.save(themeSaveRequest.requestToDto());
     }
 
+    @GetMapping("/theme/health-check")
+    public Long healthCheck(){
+        return System.currentTimeMillis();
+    }
+
+    @PostMapping("/theme/like")
+    public void likeTheme(){
+
+    }
+
     @GetMapping("/theme/{id}")
     public ThemeDto findById(@PathVariable long id) {
         return themeDomainService.findById(id);

@@ -7,9 +7,9 @@ app:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql:3306/theme?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://koc-theme-db:3306/theme?serverTimezone=Asia/Seoul
     username: root
-    password: 123
+    password: theme
   jpa:
     hibernate:
       ddl-auto: create

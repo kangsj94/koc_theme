@@ -1,5 +1,9 @@
-package com.koc.themeServer.course;
+package com.koc.themeServer.course.service;
 
+import com.koc.themeServer.course.dto.CourseDto;
+import com.koc.themeServer.course.entity.CourseEntity;
+import com.koc.themeServer.course.entity.CourseMapper;
+import com.koc.themeServer.course.repository.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

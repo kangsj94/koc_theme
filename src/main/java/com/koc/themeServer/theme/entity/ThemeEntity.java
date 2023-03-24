@@ -27,7 +27,8 @@ public class ThemeEntity {
     private String emoji;
 
     private List<String> placeList;
-
+    @OneToMany
+    @JoinColumn(name = "id")
     private List<ThemeLikeEntity> themeLikes;
 
 }

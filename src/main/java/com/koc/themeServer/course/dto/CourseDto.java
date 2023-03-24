@@ -1,4 +1,4 @@
-package com.koc.themeServer.course;
+package com.koc.themeServer.course.dto;
 
 import lombok.*;
 

@@ -9,8 +9,13 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ThemeLikeDto {
-  private Long id;
-  private Long userId;
-  private Long themeId;
-  private boolean isLiked;
+    private Long id;
+    private Long userId;
+    private Long themeId;
+    private boolean isLiked;
+
+    public ThemeLikeDto switchLike() {
+        this.isLiked = !isLiked;
+        return this;
+    }
 }

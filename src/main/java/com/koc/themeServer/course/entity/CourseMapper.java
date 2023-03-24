@@ -1,5 +1,6 @@
-package com.koc.themeServer.course;
+package com.koc.themeServer.course.entity;
 
+import com.koc.themeServer.course.dto.CourseDto;
 import org.springframework.stereotype.Component;
 
 @Component

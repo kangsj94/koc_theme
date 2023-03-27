@@ -38,9 +38,9 @@ public class ThemeController {
         return themeDomainService.findById(id);
     }
 
-    @GetMapping("/theme/recomend")
-    public List<ThemeDto> recomend() {
-        return null;
+    @GetMapping("/theme/recomendation")
+    public List<ThemeDto> getRecomendedThemeList() {
+        return themeDomainService.getRecomendedThemeList();
     }
 
     @DeleteMapping("/theme/{id}")

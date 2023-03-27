@@ -8,6 +8,7 @@ import com.koc.themeServer.theme.repository.ThemeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -32,9 +33,12 @@ public class ThemeService {
     }
 
     public ThemeDto findById(long id) {
-        return themeMapper.entityToDto(themeRepository.findById(id).get());
+        return themeMapper.entityToDto(themeRepository.findById(id).orElseThrow());
     }
 
+    public List<ThemeDto> findAll() {
+        return themeRepository.findAll().stream().map(themeMapper::entityToDto).toList();
+    }
 
     public Optional<ThemeEntity> findbyName(String themeName) {
         return themeRepository.findByThemeName(themeName);

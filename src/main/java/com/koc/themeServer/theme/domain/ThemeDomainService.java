@@ -6,6 +6,8 @@ import com.koc.themeServer.theme.validation.ThemeValidation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class ThemeDomainService {
@@ -24,6 +26,13 @@ public class ThemeDomainService {
     public void update(ThemeDto themeDto) {
         themeValidation.isAreadyExistName(themeDto);
         themeService.save(themeDto);
+    }
+
+    public List<ThemeDto> getRecomendedThemeList() {
+        return themeService.findAll().stream().
+                sorted((o1, o2) -> o2.getThemeLikeDtos().size() - o1.getThemeLikeDtos().size())
+                .limit(3)
+                .toList();
     }
 
     public void deleteById(Long id) {

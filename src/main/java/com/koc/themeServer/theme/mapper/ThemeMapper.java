@@ -1,16 +1,22 @@
 package com.koc.themeServer.theme.mapper;
 
 import com.koc.themeServer.theme.dto.ThemeDto;
+import com.koc.themeServer.theme.dto.ThemeLikeDto;
 import com.koc.themeServer.theme.entity.ThemeEntity;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
+@AllArgsConstructor
 public class ThemeMapper {
-    public ThemeDto entityToDto(ThemeEntity temaEntity) {
+    private final ThemeLikeMapper themeLikeMapper;
+
+    public ThemeDto entityToDto(ThemeEntity themeEntity) {
         return ThemeDto.builder()
-                .id(temaEntity.getId())
-                .themeName(temaEntity.getThemeName())
-                .emoji(temaEntity.getEmoji())
+                .id(themeEntity.getId())
+                .themeName(themeEntity.getThemeName())
+                .themeLikeDtos(themeEntity.getThemeLikes().stream().map(themeLikeMapper::entityToDto).filter(ThemeLikeDto::isLiked).toList())
+                .emoji(themeEntity.getEmoji())
                 .build();
     }
 

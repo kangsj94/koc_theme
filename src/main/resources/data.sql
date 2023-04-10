@@ -1,1 +1,1 @@
-INSERT INTO theme(id,imoji,theme_name)VALUES(1,'U+1F600','test_theme');
+INSERT INTO theme(id,imoji,theme_name)VALUES(1,'U+1F600','test_theme');//

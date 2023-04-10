@@ -21,7 +21,7 @@ services:
       - ./theme:/app
     working_dir: /app
     command: sh -c "gradle bootRun"
-
+  
 
 volumes:
   koc-theme-data:

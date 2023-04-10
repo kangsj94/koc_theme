@@ -26,4 +26,7 @@ springdoc:
       enabled: true
   swagger-ui:
     operations-sorter: method
-
+sql:
+  init:
+    platporm: mysql
+    data-locations: classpath:data.sql

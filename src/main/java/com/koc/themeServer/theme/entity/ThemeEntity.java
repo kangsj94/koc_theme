@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
 
 
 @Entity
@@ -26,9 +25,9 @@ public class ThemeEntity {
 
     private String emoji;
 
-    private List<String> placeList;
-    @OneToMany
-    @JoinColumn(name = "id")
-    private List<ThemeLikeEntity> themeLikes;
+//    private List<String> placeList;
+//    @OneToMany
+//    @JoinColumn(name = "id")
+//    private List<ThemeLikeEntity> themeLikes;
 
 }

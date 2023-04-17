@@ -21,7 +21,7 @@ public class ThemeLikeEntity {
 
     private long userId;
 
-    private ThemeEntity theme;
+//    private ThemeEntity theme;
 
     private boolean isLiked;
 

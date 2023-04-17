@@ -1,6 +1,5 @@
 package com.koc.themeServer.place;
 
-import com.koc.themeServer.theme.entity.ThemeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,10 +18,10 @@ public class PlaceEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private long id;
-    
+
     private String placeName;
 
-    @ManyToOne
-    @JoinColumn(name = "theme_id")
-    private ThemeEntity theme;
+//    @ManyToOne
+//    @JoinColumn(name = "theme_id")
+//    private ThemeEntity theme;
 }

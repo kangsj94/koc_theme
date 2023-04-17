@@ -15,7 +15,8 @@ public class ThemeLikeService {
     private final ThemeLikeMapper themeLikeMapper;
 
     public Optional<ThemeLikeDto> findByUserIdAndThemeId(Long userId, Long themeId) {
-        return Optional.of(themeLikeMapper.entityToDto(themeLikeRepository.findByUserIdAndThemeId(userId, themeId).orElseThrow(RuntimeException::new)));
+        // return Optional.of(themeLikeMapper.entityToDto(themeLikeRepository.findByUserIdAndThemeId(userId, themeId).orElseThrow(RuntimeException::new)));
+        return null;
     }
 
     public ThemeLikeDto save(ThemeLikeDto dto) {
